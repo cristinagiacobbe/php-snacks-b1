@@ -5,14 +5,14 @@ Creare un array con 15 numeri casuali, tenendo conto che l’array non dovrà co
 
 $randNumbers = [];
 
-for ($i = 0; $i < 15; $i++) {
+
+while (count($randNumbers) < 15) {
     $n = rand(1, 50);
-    if (in_array($n, $randNumbers, false)) {
+    if (!in_array($n, $randNumbers)) {
         $randNumbers[] = $n;
-        var_dump($randNumbers);
-    };
-}
-var_dump($randNumbers[]);
+    }
+};
+var_dump($randNumbers)
 ?>
 
 
@@ -22,10 +22,12 @@ var_dump($randNumbers[]);
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>PHP - Random numbers</title>
 </head>
 
 <body>
+
+
 
 </body>
 
