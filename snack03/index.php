@@ -45,8 +45,12 @@ $posts = [
     ],
 ];
 
-foreach ($posts as $key => $value) {
-    var_dump($key, $value);
+foreach ($posts as $date => $post_list) {
+    var_dump($date);
+    $new_date = date_create($date);
+    var_dump($new_date);
+    var_dump(date_format($new_date, "d-m-Y"));
+    // var_dump($date, $post_list);
 }
 ?>
 
@@ -56,7 +60,7 @@ foreach ($posts as $key => $value) {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Snack 3</title>
 </head>
 
 <body>
