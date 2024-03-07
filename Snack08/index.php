@@ -8,6 +8,9 @@ You can access the parameters passed through a GET request using the $_GET super
 Check if the 'name' key exists and is not empty before using it.
 */
 
+$message = "";
+
+
 ?>
 
 <!DOCTYPE html>
@@ -16,7 +19,7 @@ Check if the 'name' key exists and is not empty before using it.
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Sanck 8</title>
 </head>
 
 <body>
@@ -39,8 +42,8 @@ Check if the 'name' key exists and is not empty before using it.
 
         echo ("Ciao " . $_GET["name"] . "!");
     } else {
-        $appoggio = false;
-        echo ("Benvenuto chiunque tu sia");
+        $message = "Benvenuto chiunque tu sia";
+        echo $message;
     }
 
     ?>
