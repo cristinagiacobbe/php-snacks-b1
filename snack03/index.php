@@ -46,11 +46,11 @@ $posts = [
 ];
 
 foreach ($posts as $date => $post_list) {
-    var_dump($date);
-    $new_date = date_create($date);
-    var_dump($new_date);
-    var_dump(date_format($new_date, "d-m-Y"));
-    // var_dump($date, $post_list);
+    //var_dump($date);
+    var_dump(str_replace("/", "-", $date));
+    foreach ($post_list as $post) {
+        var_dump($post);
+    }
 }
 ?>
 
