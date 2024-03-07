@@ -45,9 +45,10 @@ $db = [
 
         <div class="<?php echo $category === 'teachers' ? 'teachers' : 'pm' ?>">
 
-            <?php foreach ($person as $date) {
-                echo $date["name"];
-            } ?>;
+            <?php foreach ($person as $subject) {
+                echo $subject["name"];
+                echo '<br>';
+            } ?>
         <?php endforeach; ?>
         </div>
 </body>
